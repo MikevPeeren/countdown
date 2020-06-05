@@ -1,0 +1,47 @@
+.countdown {
+  color: #f6f4f3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  &__days {
+    background: #ef2f3c;
+  }
+
+  &__hours {
+    background: #f6f4f3;
+    color: #183059;
+  }
+
+  &__minutes {
+    background: #276fbf;
+  }
+
+  &__seconds {
+    background: #f0a202;
+  }
+
+  &__days,
+  &__hours,
+  &__minutes,
+  &__seconds {
+    margin: 0.5em;
+    flex: 1;
+    padding: 20px;
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  &__numbers {
+    font-family: 'Montserrat', sans-serif;
+    color: #183059;
+    font-size: 4em;
+  }
+}

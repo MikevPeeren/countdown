@@ -5,7 +5,10 @@ import Head from 'next/head';
 import './styles.global.scss';
 import styles from './index.scss';
 
-const Home =()=> {
+// Components
+import Countdown from './components/Countdown';
+
+const Home = () => {
   return (
     <div className="container">
       <Head>
@@ -14,7 +17,7 @@ const Home =()=> {
       </Head>
 
       <main>
-        
+        <Countdown />
       </main>
 
       <footer>
@@ -28,6 +31,6 @@ const Home =()=> {
         </a> */}
       </footer>
     </div>
-  )
-}
+  );
+};
 export default Home;
