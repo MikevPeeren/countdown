@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 // CSS
 import styles from './Countdown.scss';
 
+// Constants
+import { DAYS, HOURS, MINUTES, SECONDS } from '../../constants/general';
+
 const Countdown = () => {
   const [retirementDate, setRetirementDate] = useState(new Date('Sep 30, 2021 00:00:00').getTime());
   const [daysLeft, setDaysLeft] = useState(0);
@@ -30,15 +33,19 @@ const Countdown = () => {
     <div className={styles.countdown}>
       <div className={styles.countdown__days}>
         <div className={styles.countdown__numbers}>{daysLeft}</div>
+        {DAYS}
       </div>
       <div className={styles.countdown__hours}>
         <div className={styles.countdown__numbers}>{hoursLeft}</div>
+        {HOURS}
       </div>
       <div className={styles.countdown__minutes}>
         <div className={styles.countdown__numbers}>{minutesLeft}</div>
+        {MINUTES}
       </div>
       <div className={styles.countdown__seconds}>
         <div className={styles.countdown__numbers}>{secondsLeft}</div>
+        {SECONDS}
       </div>
     </div>
   );
