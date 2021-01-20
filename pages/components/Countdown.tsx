@@ -8,7 +8,7 @@ import styles from './Countdown.scss';
 import { DAYS, HOURS, MINUTES, SECONDS } from '../../constants/general';
 
 const Countdown = () => {
-  const [retirementDate, setRetirementDate] = useState(new Date(2021, 7, 27).getTime());
+  const [retirementDate, setRetirementDate] = useState(new Date(2021, 6, 27).getTime());
   const [daysLeft, setDaysLeft] = useState(0);
   const [hoursLeft, setHoursLeft] = useState(0);
   const [minutesLeft, setMinutesLeft] = useState(0);
