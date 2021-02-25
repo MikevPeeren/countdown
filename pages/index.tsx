@@ -1,10 +1,6 @@
 // Next
 import Head from 'next/head';
 
-// CSS
-import './styles.global.scss';
-import styles from './index.scss';
-
 // Components
 import Countdown from './components/Countdown';
 import Header from './components/Header';
@@ -21,7 +17,7 @@ const Home = () => {
       </Head>
 
       <main>
-        <div className={styles.content}>
+        <div className="content">
           <Header></Header>
           <Countdown />
         </div>

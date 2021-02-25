@@ -1,9 +1,6 @@
 // React
 import { useState, useEffect } from 'react';
 
-// CSS
-import styles from './Countdown.scss';
-
 // Constants
 import { DAYS, HOURS, MINUTES, SECONDS } from '../../constants/general';
 
@@ -32,21 +29,21 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className={styles.countdown}>
-      <div className={styles.countdown__days}>
-        <div className={styles.countdown__numbers}>{daysLeft}</div>
+    <div className="countdown">
+      <div className="countdown__days">
+        <div className="countdown__numbers">{daysLeft}</div>
         {DAYS}
       </div>
-      <div className={styles.countdown__hours}>
-        <div className={styles.countdown__numbers}>{hoursLeft}</div>
+      <div className="countdown__hours">
+        <div className="countdown__numbers">{hoursLeft}</div>
         {HOURS}
       </div>
-      <div className={styles.countdown__minutes}>
-        <div className={styles.countdown__numbers}>{minutesLeft}</div>
+      <div className="countdown__minutes">
+        <div className="countdown__numbers">{minutesLeft}</div>
         {MINUTES}
       </div>
-      <div className={styles.countdown__seconds}>
-        <div className={styles.countdown__numbers}>{secondsLeft}</div>
+      <div className="countdown__seconds">
+        <div className="countdown__numbers">{secondsLeft}</div>
         {SECONDS}
       </div>
     </div>
